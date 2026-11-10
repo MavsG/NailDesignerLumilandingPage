@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Lumi | Nail designer, alongamento em gel e nail art</title>
+<meta name="description" content="Alongamento em gel, esmaltação e nail art com hora marcada. Agende pelo WhatsApp.">
+<meta property="og:title" content="Studio Lumi | Nail designer">
+<meta property="og:description" content="Alongamento em gel, esmaltação e nail art com hora marcada. Agende pelo WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf6f4;--ink:#2b1430;--soft:#6e5a72;--line:#e7d6dc;--pink:#d6246e;--lilac:#f1e6ff;--plum:#2b1430}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:1.02rem}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.1}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);margin-bottom:1.6rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1080px,92%);margin:0 auto}
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+
+/* topo */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0}
+.logo{font-family:Fraunces,serif;font-style:italic;font-size:1.4rem;text-decoration:none}
+nav{display:flex;align-items:center;gap:1.6rem;font-size:.95rem}
+nav a{text-decoration:none}
+nav a:hover{color:var(--pink)}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:600;padding:.8rem 1.7rem;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#b81b5b;transform:translateY(-2px)}
+.btn.sm{padding:.5rem 1.2rem;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{padding-top:clamp(2.5rem,6vw,4.5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--pink)}
+.hero p{margin:1.4rem 0 2rem;max-width:44ch;color:var(--soft);font-size:1.1rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.stage{background:var(--lilac);border-radius:36px;padding:3.2rem 1.6rem 1.8rem;display:grid;justify-items:center;gap:1.4rem}
+.hand{display:flex;align-items:flex-end;gap:clamp(8px,2vw,16px)}
+.stage small{color:var(--soft);font-size:.85rem;text-align:center}
+.nail{--h:140px;width:calc(var(--h)*.52);height:var(--h);border-radius:50% 50% 44% 44%/68% 68% 32% 32%;position:relative;transform:rotate(var(--r,0deg));box-shadow:inset -6px -8px 14px rgba(0,0,0,.14),inset 5px 6px 12px rgba(255,255,255,.55),0 16px 22px -10px rgba(43,20,48,.5);animation:paint .8s cubic-bezier(.2,.9,.3,1.1) both;animation-delay:calc(var(--i)*.14s + .2s);transition:transform .3s}
+.nail::after{content:"";position:absolute;left:18%;top:9%;width:16%;height:46%;border-radius:50%;background:linear-gradient(#ffffffb0,#fff0)}
+.nail:hover{transform:rotate(var(--r,0deg)) translateY(-10px)}
+@keyframes paint{from{opacity:0;transform:translateY(40px) rotate(var(--r,0deg)) scaleY(.3)}}
+.n1{background:linear-gradient(180deg,#fff 0 24%,#f7d9d3 24% 100%)}
+.n2{background:linear-gradient(135deg,#f6f6fa,#b4b8c9 35%,#fff 50%,#979db6 72%,#e6e7f1)}
+.n3{background:linear-gradient(160deg,#e8294f,#a10c2e)}
+.n4{background:radial-gradient(circle at 22% 30%,#fff 0 1.5px,#0000 2.5px),radial-gradient(circle at 70% 55%,#fff 0 1.5px,#0000 2.5px),radial-gradient(circle at 40% 80%,#ffe9a6 0 1.5px,#0000 2.5px),radial-gradient(circle at 78% 20%,#ffe9a6 0 1.3px,#0000 2.5px),linear-gradient(160deg,#ff8fb8,#c85bd8)}
+.n5{background:linear-gradient(160deg,#52275f,#1f0d27)}
+
+/* serviços */
+.services{background:var(--plum);color:#fdf6f4}
+.services h2{color:#fff}
+.list{list-style:none;padding:0}
+.list li{display:grid;grid-template-columns:1fr auto;gap:.3rem 2rem;padding:1.3rem 0;border-top:1px solid #ffffff30}
+.list li:last-child{border-bottom:1px solid #ffffff30}
+.list h3{font-size:1.45rem}
+.list p{grid-column:1;color:#e6d4ea;max-width:52ch;font-size:.97rem}
+.list b{grid-row:1/3;grid-column:2;align-self:center;font-family:Fraunces,serif;font-size:1.3rem;font-weight:500;white-space:nowrap}
+.note{margin-top:1.2rem;font-size:.85rem;color:#cdb7d3}
+
+/* trabalhos */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.slot{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;display:grid;place-items:end start;padding:1rem;font-size:.8rem;color:#2b1430aa}
+.slot:nth-child(1){background:#ffd9e6}.slot:nth-child(2){background:#e4d4ff}.slot:nth-child(3){background:#fbe9c8}
+.slot:nth-child(4){background:#d4ecf0}.slot:nth-child(5){background:#f6cfd0}.slot:nth-child(6){background:#dcd5f2}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.more{margin-top:1.4rem;color:var(--soft)}
+.more a{color:var(--pink);font-weight:600}
+
+/* como funciona */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;border-top:3px solid var(--pink);padding-top:1rem}
+.steps li::before{content:counter(s);font-family:Fraunces,serif;font-size:2.4rem;color:var(--pink);line-height:1}
+.steps h3{font-size:1.3rem;margin:.4rem 0}
+.steps p{color:var(--soft);font-size:.96rem}
+
+/* dúvidas */
+.faq{max-width:760px}
+details{border-top:1px solid var(--line);padding:1.1rem 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--pink);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:.7rem;color:var(--soft)}
+
+/* contato */
+.contact{background:var(--lilac)}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.contact p{color:var(--soft);margin-bottom:1.6rem;max-width:44ch}
+.info{display:grid;gap:1.2rem}
+.info div{border-left:3px solid var(--pink);padding-left:1rem}
+.info small{display:block;color:var(--soft);font-size:.82rem}
+footer{padding:1.6rem 0;text-align:center;font-size:.85rem;color:var(--soft)}
+.fab{position:fixed;right:1rem;bottom:1rem;z-index:30;box-shadow:0 10px 24px -8px rgba(214,36,110,.6)}
+
+@media(max-width:780px){
+ nav a:not(.btn){display:none}
+ .hero .wrap,.contact .wrap{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .steps{grid-template-columns:1fr}
+ .list li{grid-template-columns:1fr}.list b{grid-row:auto;grid-column:1}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo" data-cfg="nome">Studio Lumi</a>
+    <nav>
+      <a href="#servicos">Serviços</a><a href="#trabalhos">Trabalhos</a><a href="#duvidas">Dúvidas</a>
+      <a class="btn sm" data-wa href="#">Agendar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Unhas que você vai querer <em>mostrar.</em></h1>
+        <p>Alongamento em gel, esmaltação e nail art feitos com calma, higiene e capricho, em <span data-cfg="cidade">seu bairro</span>. Atendimento só com hora marcada.</p>
+        <div class="cta">
+          <a class="btn" data-wa href="#">Agendar pelo WhatsApp</a>
+          <a class="btn ghost" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="hand">
+          <span class="nail n1" style="--i:0;--h:108px;--r:-8deg"></span>
+          <span class="nail n2" style="--i:1;--h:134px;--r:-3deg"></span>
+          <span class="nail n3" style="--i:2;--h:152px"></span>
+          <span class="nail n4" style="--i:3;--h:130px;--r:3deg"></span>
+          <span class="nail n5" style="--i:4;--h:100px;--r:10deg"></span>
+        </div>
+        <small>Francesinha, chrome, vermelho clássico, glitter e preto vinho</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="services">
+    <div class="wrap">
+      <h2>Serviços</h2>
+      <ul class="list">
+        <li><h3>Esmaltação em gel</h3><p>Cor uniforme e brilho que dura semanas, sem lascar.</p><b>a partir de R$ 50</b></li>
+        <li><h3>Alongamento em gel</h3><p>Em molde ou tips, no formato que você escolher: amendoado, quadrado, stiletto.</p><b>a partir de R$ 150</b></li>
+        <li><h3>Manutenção</h3><p>Reposição e ajuste do alongamento a cada 15 a 21 dias.</p><b>a partir de R$ 110</b></li>
+        <li><h3>Nail art</h3><p>Francesinha, chrome, joias e desenhos à mão livre. Traga a sua referência.</p><b>a partir de R$ 20</b></li>
+        <li><h3>Remoção segura</h3><p>Retirada do gel preservando a sua unha natural.</p><b>R$ 40</b></li>
+      </ul>
+      <p class="note">Os valores variam conforme o tamanho e o nível da decoração. O preço final é combinado antes de começar.</p>
+    </div>
+  </section>
+
+  <section id="trabalhos">
+    <div class="wrap">
+      <h2>Trabalhos recentes</h2>
+      <div class="grid" id="galeria">
+        <div class="slot">sua foto aqui</div><div class="slot">sua foto aqui</div><div class="slot">sua foto aqui</div>
+        <div class="slot">sua foto aqui</div><div class="slot">sua foto aqui</div><div class="slot">sua foto aqui</div>
+      </div>
+      <p class="more">Tem mais no Instagram: <a data-ig href="#" target="_blank" rel="noopener">@<span data-cfg="instagram">seuperfil</span></a></p>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="wrap">
+      <h2>Como agendar</h2>
+      <ol class="steps">
+        <li><h3>Chame no WhatsApp</h3><p>Conte o que você quer e, se tiver, mande uma foto de referência.</p></li>
+        <li><h3>Escolha o horário</h3><p>Você recebe os horários livres e confirma o melhor para você.</p></li>
+        <li><h3>Venha relaxar</h3><p>Chegue no horário combinado. O atendimento leva em média de 1h30 a 3h.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="duvidas">
+    <div class="wrap faq">
+      <h2>Dúvidas frequentes</h2>
+      <details><summary>Quanto tempo dura o alongamento?</summary><p>Com os cuidados certos e a manutenção em dia, em média de 15 a 21 dias entre as visitas.</p></details>
+      <details><summary>Posso levar uma foto de referência?</summary><p>Pode, e ajuda bastante. Se o design for muito detalhado, avisamos o valor e o tempo antes de começar.</p></details>
+      <details><summary>Quais as formas de pagamento?</summary><p>Pix, cartão de débito e crédito.</p></details>
+      <details><summary>E se eu precisar remarcar?</summary><p>Avise com pelo menos 24 horas de antecedência pelo WhatsApp e encontramos outro horário.</p></details>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="wrap">
+      <div>
+        <h2>Garanta o seu horário</h2>
+        <p>As vagas da semana costumam preencher rápido. Chame no WhatsApp e escolha o melhor dia.</p>
+        <a class="btn" data-wa href="#">Agendar pelo WhatsApp</a>
+      </div>
+      <div class="info">
+        <div><small>Endereço</small><span data-cfg="endereco">Rua Exemplo, 123, sala 2</span></div>
+        <div><small>Horário</small><span data-cfg="horario">Terça a sábado, das 9h às 19h</span></div>
+        <div><small>Instagram</small><a data-ig href="#" target="_blank" rel="noopener">@<span data-cfg="instagram">seuperfil</span></a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="ano">2026</span> <span data-cfg="nome">Studio Lumi</span></footer>
+<a class="btn fab" data-wa href="#" aria-label="Agendar pelo WhatsApp">Agendar</a>
+
+<script>
+/* ============ PERSONALIZE AQUI (os dados do cliente) ============
+   whatsapp: só números, com 55 + DDD (ex.: 5511999999999)
+   fotos: links diretos das fotos dos trabalhos (até 6). Vazio = mostra os quadrinhos coloridos. */
+var CONFIG = {
+  nome: 'Studio Lumi',
+  cidade: 'seu bairro',
+  whatsapp: '5511999999999',
+  instagram: 'seuperfil',
+  endereco: 'Rua Exemplo, 123, sala 2',
+  horario: 'Terça a sábado, das 9h às 19h',
+  mensagem: 'Oi! Vim pelo site e quero agendar um horário.',
+  fotos: []
+};
+/* ================================================================ */
+
+document.querySelectorAll('[data-cfg]').forEach(function(el){el.textContent=CONFIG[el.dataset.cfg]});
+var wa='https://wa.me/'+CONFIG.whatsapp+'?text='+encodeURIComponent(CONFIG.mensagem);
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href=wa;a.target='_blank';a.rel='noopener'});
+document.querySelectorAll('[data-ig]').forEach(function(a){a.href='https://www.instagram.com/'+CONFIG.instagram+'/'});
+document.title=CONFIG.nome+' | Nail designer, alongamento em gel e nail art';
+document.getElementById('ano').textContent=new Date().getFullYear();
+CONFIG.fotos.slice(0,6).forEach(function(u,i){
+  var s=document.querySelectorAll('#galeria .slot')[i];if(!s||!u)return;
+  var im=new Image();im.alt='Trabalho de nail design '+(i+1);im.loading='lazy';im.onerror=function(){im.remove()};im.src=u;s.appendChild(im);
+});
+</script>
+</body>
+</html>
